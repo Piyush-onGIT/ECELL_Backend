@@ -72,8 +72,6 @@ class Ecell:
 
         user.posts_set.create(title=data['title'], content=data['content'])
         return HttpResponse("0")
-        
-        return HttpResponse("-1")
 
     @api_view(["POST"])
     def editPost(request: rest_framework.request.Request) -> HttpResponse:
